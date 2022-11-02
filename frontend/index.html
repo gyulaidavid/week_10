@@ -4,9 +4,22 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
 	<title>Week 10</title>
 </head>
 <body>
-	<div id="root"></div>
+	<div id="root">
+		<form action="https://mavcsoport.hu" id="add-category">
+			<label for="name">Név:</label>
+			<input id="name" type="text" name="name" />
+			<label for="category">Kategória:</label>
+			<input id="category" type="text" name="category" />
+			<label for="price">Ár:</label>
+			<input id="price" type="text" name="price" />
+			<input type="submit", value="Küldés" />
+		</form>
+		<p id="success-text"></p>
+	</div>
 </body>
 </html>
