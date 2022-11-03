@@ -6,7 +6,7 @@ form.addEventListener('submit', (event) => {
         category: document.querySelector('#category').value,
         price: parseInt(document.querySelector('#price').value)
     }
-
+// képküldéshez ideális a fomData, a többi JSON.
     const formData = new FormData()
     formData.append('fileName', document.querySelector('#file-name').value)
     formData.append('file', document.querySelector ('#file').files[0]) //files array-t ad vissza, még ha egy elem is van benne
