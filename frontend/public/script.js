@@ -6,7 +6,7 @@ form.addEventListener('submit', (event) => {
         category: document.querySelector('#category').value,
         price: parseInt(document.querySelector('#price').value)
     }
-    fetch("/product", {
+    fetch("/upload", {
         method: 'POST', 
         headers: {
           'Content-Type': 'application/json'
