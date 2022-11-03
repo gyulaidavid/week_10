@@ -1,5 +1,5 @@
 const form = document.querySelector('#add-category');
-form.addEventListener(submit, (event) => {
+form.addEventListener('submit', (event) => {
     event.preventDefault();
     const product = {
         name: document.querySelector('#name').value,
