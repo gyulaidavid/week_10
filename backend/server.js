@@ -16,10 +16,15 @@ app.use(fileUpload())
 //kép küldése csak form data-val lehet, kép nem string
 
 
-//endpoint
+//endpoint, a főoldal letöltését szolgálja
 app.get('/', (req, res) => {
   res.sendFile(path.join(`${__dirname}/../frontend/index.html`))
 })
+
+app.get('/about', (reg, res) => {
+	res.send("hello")
+})
+
 
 //endpoint
 app.use('/public', express.static(`${__dirname}/../frontend/public`))
@@ -64,6 +69,7 @@ app.post('/upload-image', (request, response) => {
 // app.get('/script.js', (req, res) => {
 // 	res.sendFile(path.join(`${__dirname}/../frontend/script.js`))
 //   })
+console.log(module);
 
 app.listen(port, () => {
   console.log(`server is running @: http://127.0.0.1:${port}`)
